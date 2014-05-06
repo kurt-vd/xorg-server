@@ -44,4 +44,6 @@ endif # CONFIG_NEED_DBUS
 
 endif # !CONFIG_UDEV
 
+libconfig_la_SOURCES += x11hotplug.c
+
 EXTRA_DIST = xorg-server.conf x11-input.fdi 10-evdev.conf fdi2iclass.py

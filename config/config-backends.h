@@ -73,3 +73,6 @@ void config_hal_fini(void);
 int config_wscons_init(void);
 void config_wscons_fini(void);
 #endif
+
+int config_x11hotplug_init(void);
+void config_x11hotplug_fini(void);
