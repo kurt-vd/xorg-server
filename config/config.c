@@ -56,6 +56,8 @@ config_init(void)
     if (!config_wscons_init())
         ErrorF("[config] failed to initialise wscons\n");
 #endif
+    if (!config_x11hotplug_init())
+       ErrorF("[config] failed to initialise x11hotplug\n");
 }
 
 void
@@ -74,6 +76,7 @@ config_fini(void)
 #elif defined(CONFIG_WSCONS)
     config_wscons_fini();
 #endif
+    config_x11hotplug_fini();
 }
 
 static void
